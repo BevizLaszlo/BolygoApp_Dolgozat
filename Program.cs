@@ -36,7 +36,6 @@ namespace BolygoApp
             string bolygokHolddal = "[";
             foreach (Bolygo b in bolygok)
                 if (b.Holdak > holdSzam) bolygokHolddal += $"{b.Nev}, ";
-            bolygokHolddal = bolygokHolddal.Remove(bolygokHolddal.Length - 2);
             bolygokHolddal += "]";
 
             Console.WriteLine($"\t\ta következő bolygókna van {holdSzam}-nál/-nél több holdja:");
